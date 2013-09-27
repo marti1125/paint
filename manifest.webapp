@@ -1,0 +1,22 @@
+{
+  "name": "Paint",
+  "description": "Paint",
+  "launch_path": "/index.html",
+  "icons": {
+    "60": "/img/60.png",
+	"120": "/img/120.png",
+    "128": "/img/128.png"
+  },
+  "orientation": ["portrait"],
+  "developer": {
+    "name": "Willy Aguirre",
+    "url": "http://willyaguirre.me/"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Paint",
+      "description": "Paint"
+    }
+  },
+  "default_locale": "en"
+}
