@@ -18,5 +18,11 @@
       "description": "Paint"
     }
   },
+  "locales": {
+    "es": {
+      "name": "Paint",
+      "description": "Paint"
+    }
+  },
   "default_locale": "en"
 }
