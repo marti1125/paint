@@ -24,5 +24,10 @@
       "description": "Paint"
     }
   },
-  "default_locale": "en"
+  "default_locale": "en",
+  "permissions": {
+    "device-storage:sdcard":{ "access": "readwrite" },
+    "device-storage:pictures":{ "access": "readwrite" } 
+  },
+  "type": "privileged"
 }

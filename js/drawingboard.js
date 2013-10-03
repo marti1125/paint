@@ -27,7 +27,7 @@ DrawingBoard.Board = function(id, opts) {
 	if (!this.$el.length)
 		return false;
 
-	var tpl = '<div class="drawing-board-canvas-wrapper"></canvas><canvas class="drawing-board-canvas"></canvas><div class="drawing-board-cursor drawing-board-utils-hidden"></div></div>';
+	var tpl = '<div class="drawing-board-canvas-wrapper"></canvas><canvas id="drawing-board-id" class="drawing-board-canvas"></canvas><div class="drawing-board-cursor drawing-board-utils-hidden"></div></div>';
 	if (this.opts.controlsPosition.indexOf("bottom") > -1) tpl += '<div class="drawing-board-controls"></div>';
 	else tpl = '<div class="drawing-board-controls"></div>' + tpl;
 
@@ -314,12 +314,18 @@ DrawingBoard.Board.prototype = {
 
 	getImg: function() {
 		return this.canvas.toDataURL("image/png");
+		// dataURL.replace("image/png", "image/octet-stream");
 	},
 
 	downloadImg: function() {
-		var img = this.getImg();
+	
+		
+		
+		
+		/*var img = this.getImg();
+		
 		img = img.replace("image/png", "image/octet-stream");
-		window.location.href = img;
+		window.location.href = img;*/
 	},
 
 
