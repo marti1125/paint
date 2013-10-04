@@ -2,6 +2,7 @@
   "name": "Paint",
   "description": "Paint",
   "launch_path": "/index.html",
+  "version": "2.0",
   "icons": {
     "60": "/img/60.png",
 	"120": "/img/120.png",
@@ -26,7 +27,7 @@
   },
   "default_locale": "en",
   "permissions": {    
-    "device-storage:pictures":{ "access": "readwrite" } 
+    "device-storage:pictures":{ "access": "readwrite", "description": "save image in gallery"} 
   },
   "type": "privileged"
 }
