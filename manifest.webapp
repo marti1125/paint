@@ -25,8 +25,7 @@
     }
   },
   "default_locale": "en",
-  "permissions": {
-    "device-storage:sdcard":{ "access": "readwrite" },
+  "permissions": {    
     "device-storage:pictures":{ "access": "readwrite" } 
   },
   "type": "privileged"
