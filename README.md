@@ -1,5 +1,8 @@
-Paint
+[Firefox OS App] Paint
 =====
+
+You Can install on Firefox OS device from ![Firefox Marketplace](https://marketplace.firefox.com/app/paint-1/)
+
 ####Version 1
 
 ![1](https://raw.github.com/marti1125/paint/master/v1.png)
