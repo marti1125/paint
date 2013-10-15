@@ -10,4 +10,6 @@ You Can install on Firefox OS device from ![Firefox Marketplace](https://marketp
 ####Version 2
 
 ![2](https://raw.github.com/marti1125/paint/master/v2.png)
+![3](https://raw.github.com/marti1125/paint/master/v2_1.png)
+![4](https://raw.github.com/marti1125/paint/master/v2_2.png)
 
