@@ -26,7 +26,7 @@ $(document).on('ready',function(){
 
 			function saveAndSend(blob) {				
 				var storage = navigator.getDeviceStorage("pictures");
-				var request = storage.addNamed(blob, "image-"+randomImage+".png");
+				var request = storage.add(blob, "image-"+randomImage+".png");
 
 				request.onsuccess = function () {
 					alert('the image has saved successfully')						
