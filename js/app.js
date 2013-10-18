@@ -9,8 +9,18 @@ function randomUUID() {
 }
 
 $(document).on('ready',function(){
+
+	var notificationOnSuccess = navigator.mozNotification.createNotification(
+                "",
+                "The image has saved successfully"
+            );
+
+	var notificationOnError = navigator.mozNotification.createNotification(
+                "",
+                "Can not save the image"
+            );
+
 	var myBoard = new DrawingBoard.Board('board');
-	//myBoard.addControl('Download');
 	
 	$(".drawing-board-control-save-button").click(function(){
 		var randomImage = randomUUID();
@@ -29,11 +39,11 @@ $(document).on('ready',function(){
 				var request = storage.add(blob, "image-"+randomImage+".png");
 
 				request.onsuccess = function () {
-					alert('the image has saved successfully')						
+					notificationOnSuccess.show();										
 				}
 				
 				request.onerror = function () {
-					alert('can not save the image')
+					notificationOnError.show();					
 				}
 				
 			}					

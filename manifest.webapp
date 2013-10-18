@@ -27,7 +27,13 @@
   },
   "default_locale": "en",
   "permissions": {    
-    "device-storage:pictures":{ "access": "readwrite", "description": "save image in gallery"} 
+    "device-storage:pictures":{ 
+      "access": "readwrite", 
+      "description": "save image in gallery"
+    },
+    "desktop-notification": {
+      "description" : "Show notifications"
+    }
   },
   "type": "privileged"
 }
