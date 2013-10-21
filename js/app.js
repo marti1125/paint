@@ -8,21 +8,21 @@ function randomUUID() {
 	return s.join(''); 
 }
 
-$(document).on('ready',function(){
+Zepto(function($){
 
+	var myBoard = new DrawingBoard.Board('board');
+	
 	var notificationOnSuccess = navigator.mozNotification.createNotification(
-                "",
+                "Success",
                 "The image has saved successfully"
             );
 
 	var notificationOnError = navigator.mozNotification.createNotification(
-                "",
+                "Error",
                 "Can not save the image"
-            );
-
-	var myBoard = new DrawingBoard.Board('board');
+            );	
 	
-	$(".drawing-board-control-save-button").click(function(){
+	$(".drawing-board-control-save-button").on('click',function(){
 		var randomImage = randomUUID();
 		var cnv = document.getElementById("drawing-board-id");
 		cnv.toBlob(function (blob) {		
