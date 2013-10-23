@@ -17,15 +17,13 @@
     "en-US": {
       "name": "Paint",
       "description": "Paint"
-    }
-  },
-  "locales": {
+    },
     "es": {
       "name": "Paint",
       "description": "Paint"
     }
-  },
-  "default_locale": "en",
+  },  
+  "default_locale": "en-US",
   "permissions": {    
     "device-storage:pictures":{ 
       "access": "readwrite", 
