@@ -12,10 +12,7 @@ Zepto(function($){
 
 	var myBoard = new DrawingBoard.Board('board');
 	
-	var notificationOnSuccess = navigator.mozNotification.createNotification(
-                "Success",
-                "The image has saved successfully"
-            );
+	var success = "The image has saved successfully";
 
 	var notificationOnError = navigator.mozNotification.createNotification(
                 "Error",
@@ -39,7 +36,7 @@ Zepto(function($){
 				var request = storage.add(blob, "image-"+randomImage+".png");
 
 				request.onsuccess = function () {
-					notificationOnSuccess.show();										
+					alert(success);							
 				}
 				
 				request.onerror = function () {

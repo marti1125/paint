@@ -2,7 +2,7 @@
   "name": "Paint",
   "description": "Paint",
   "launch_path": "/index.html",
-  "version": "2.1",
+  "version": "2.1.1",
   "icons": {
     "32": "/img/32.png",
     "60": "/img/60.png",
