@@ -1,9 +1,45 @@
-body
-{
+body {
 	background-color: #F1C40F;
 }
-#board 
-{
+
+@media only screen and (min-width : 768px) {
+	.drawing-board-control-colors-current,
+	.drawing-board-control-drawingmode-pencil-button,
+	.drawing-board-control-drawingmode-eraser-button,
+	.drawing-board-control-drawingmode-filler-button,
+	.drawing-board-control-navigation-back,
+	.drawing-board-control-navigation-forward,
+	.drawing-board-control-navigation-reset {
+		width: 46px !important;
+		height: 46px !important;
+		background-size: 20px !important;		
+	}
+	.drawing-board-control-colors-rainbows {
+		width: 450px !important;
+		height: 120px !important;
+	}
+	.drawing-board-control-colors-rainbow {
+		height: 35px !important;
+	}
+	.drawing-board-control-colors-picker {
+		width: 30px !important;
+		height: 30px !important;
+	}
+	.drawing-board-control-size[data-drawing-board-type="range"]
+	.drawing-board-control-inner {
+    	width: 120px !important;
+    	height: 40px !important;
+	}
+	.drawing-board-canvas {
+		background-color: white;
+	}
+	#board {
+		width: 750px !important;
+		height: 950px !important;		
+	}
+}
+
+#board {
 	width: 305px;
 	height: 400px;
 }
